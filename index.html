@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bee Game</title>
+        <link rel='stylesheet' href="./style.css" type="text/css" />
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form id="form">
+                <h1 class="title">Hi!</h1>
+
+                <div class="field">
+                    <label for="player">Your name:</label>
+
+                    <input type="text" id="player" name="player" value="">
+                </div>
+
+                <div class="field">
+                    <label for="queen">Number of queens:</label>
+
+                    <input type="text" id="queen" name="queen" value="1">
+                </div>
+
+                <div class="field">
+                    <label for="worker">Number of workers:</label>
+
+                    <input type="text" id="worker" name="worker" value="5">
+                </div>
+
+                <div class="field">
+                    <label for="drone">Number of drones:</label>
+
+                    <input type="text" id="drone" name="drone" value="8">
+                </div>
+
+                <div class="play-button" id="start">Play</div>
+            </form>
+
+            <div id="background-section" class="background-section"></div>
+
+            <div id="game" class="hidden game">
+                <div class="reset" id="reset">↩</div>
+
+                <div class="bee-swarm" id="bee-swarm"></div>
+
+                <div class="try-again" id="try-again">Try Again</div>
+
+                <div class="hit-button" id="hit">HIT</div>
+            </div>
+        </div>
+    </body>
+</html>
